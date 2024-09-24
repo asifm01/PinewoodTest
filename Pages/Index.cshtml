@@ -1,0 +1,23 @@
+﻿@page
+@* @model Models.Customer *@
+@{
+    ViewData["Title"] = "Home page";
+    Redirect("Customers");
+}
+
+@* <h2>Customer Maintenance</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    @Html.HiddenFor(mbox => mbox.Id)
+
+    <div>
+        Name: @Html.TextBoxFor(m => m.Name)
+    </div>
+
+    <input type="submit" value="Save" />
+}
+ *@

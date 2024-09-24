@@ -1,0 +1,14 @@
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace WebApplication3.Data
+{
+    public class WebApplication3Context : DbContext
+    {
+        public WebApplication3Context (DbContextOptions<WebApplication3Context> options)
+            : base(options)
+        {
+        }
+
+        public DbSet<WebApplication3.Models.Customer> Customer { get; set; } = default!;
+    }
+}
