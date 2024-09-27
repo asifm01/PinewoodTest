@@ -1,0 +1,1 @@
+A simple application written in ASP.NET to add and delete customers from a database.  Entity Framework (DB First) is used for database comms.  The UI is functional and no real emphasis has been placed on the UI.
